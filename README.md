@@ -3,21 +3,9 @@
 ## Just run:
 
     $ gem install csv2html
-    $ ruby csv2html data.csv > table.html
+    $ csv2html data.csv > table.html
 
 You can customize the table's id, table's classes, header's classes and field's classes. You can also use linux pipes and it's only one small file long with **NO** dependencies.
-
-## Pseudo installation (not needed)
-
-You can also add execution permissions with:
-
-    $ chmod +x csvtohtml.rb
-
-And maybe add it to you system path. In my case I have a `~/bin` folder on my path:
-
-    $ mkdir -p ~/bin
-    $ cp csvtohtml.rb ~/bin
-    $ export PATH=$HOME/bin:$PATH
 
 ## Some options:
 
