@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'csv2html'
+
+chatter = Csv2html::Chatter.new
+chatter.say_hello

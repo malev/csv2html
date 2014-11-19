@@ -1,5 +1,9 @@
 require "csv2html/version"
 
 module Csv2html
-  # Your code goes here...
+  class Chatter
+    def say_hello
+      puts 'Just for a test'
+    end
+  end
 end
