@@ -1,6 +1,12 @@
 #!/usr/bin/env ruby
 
-require 'csv2html'
+require "csv2html"
 
-chatter = Csv2html::Chatter.new
-chatter.say_hello
+
+begin
+  CSV2HTML::Application.new(ARGV).run
+rescue Errno::ENOENT => err
+  abort "csvtohtml: #{err.message}"
+rescue OptionParser::InvalidOption => err
+  abort "csvtohtml: #{err.message}\nusage: csvtohtml.rb data.csv [options]"
+end
